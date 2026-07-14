@@ -14,7 +14,9 @@ const S = {
   app: {
     minHeight: "100vh", background: C.bg, color: C.text,
     fontFamily: "'Inter', system-ui, sans-serif", fontSize: 15,
-    maxWidth: 520, margin: "0 auto", paddingBottom: 40,
+    maxWidth: 520, margin: "0 auto",
+    paddingTop: "env(safe-area-inset-top)",
+    paddingBottom: "calc(40px + env(safe-area-inset-bottom))",
   },
   display: { fontFamily: "'Archivo Black', sans-serif", letterSpacing: "0.5px" },
   hand: { fontFamily: "'Caveat', cursive", color: C.ink },
