@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@600;700&family=Inter:wght@400;500;600;800&display=swap');
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; padding: 0; background: #0F1216; }
+input, button { font-family: inherit; }
+input:focus { outline: 2px solid #5CD8F755; outline-offset: 1px; }
+button:focus-visible { outline: 2px solid #5CD8F7; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+::-webkit-scrollbar { height: 4px; width: 4px; }
+::-webkit-scrollbar-thumb { background: #2A3140; border-radius: 2px; }
