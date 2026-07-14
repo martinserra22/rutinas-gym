@@ -47,6 +47,7 @@ function Login() {
   const [busy, setBusy] = useState(false);
 
   const enter = async (mode) => {
+    if (!email || !pass) { setMsg("Completá email y contraseña."); return; }
     setBusy(true); setMsg("");
     const fn = mode === "up"
       ? supabase.auth.signUp({ email, password: pass })
